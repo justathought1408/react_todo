@@ -1,0 +1,18 @@
+.App__title {
+	text-align: center;
+	color: white;
+}
+
+.App__text {
+	font-weight: 500;
+	text-align: center;
+	color: white;
+	margin-bottom: 0;
+}
+
+.App__completed-count{
+	font-weight: 500;
+	text-align: center;
+	color: white;
+	margin-bottom: 0;
+}

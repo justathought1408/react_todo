@@ -1,0 +1,61 @@
+.ResetButton__row {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 5px;
+}
+
+.ResetButton__btn {
+	display: block;
+	width: 50px;
+	height: 50px;
+	position: relative;
+	border-radius: 50%;
+	cursor: pointer;
+	margin-right: 7px;
+	margin-top: 0;
+}
+
+
+.ResetButton__btn::before {
+	content: "";
+	background: url(../icons/reset-16.png) 0 0/cover no-repeat;
+	width: 20px;
+	height: 20px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+}
+
+.ResetButton__hint {
+	margin: 0;
+	margin-top: 10px;
+	background-color: white;
+	opacity:0%;
+	width: 70px;
+	text-align: center;
+	height: 30px;
+	position: relative;
+	bottom: 5px;
+	right: 3px;
+	border-radius: 12px;
+	transition: .2s;
+}
+
+.ResetButton__btn-animation {
+	animation: animation360 .4s ease-in-out reverse;
+	animation-iteration-count: 1;
+}
+
+
+@keyframes animation360 {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+

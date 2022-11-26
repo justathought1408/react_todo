@@ -1,0 +1,98 @@
+.Post__row {
+	display: flex;
+	margin: 0 auto;
+	height: 55px;
+	margin-top: 25px;
+	width: 520px;
+	border: 1px solid #000;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+	border-radius: 12px;
+	transition: .2s;
+}
+
+.Post__row-completed {
+	background-color: lightgreen;
+}
+
+.Post__title {
+	margin-left: 15px;
+	font-weight: 500;
+}
+
+
+.Post__delete-btn {
+	margin-right: 10px;
+	height: 40px;
+	width: 40px;
+	position: relative;
+	cursor: pointer;
+	background-color: white;
+	border: 1px solid white;
+	background-color: transparent;
+	border: 1px solid transparent;
+}
+
+.Post__delete-btn::before {
+	content: "";
+	background: url(../icons/delete-icon.png) 0 0/cover no-repeat;
+	width: 20px;
+	height: 20px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+}
+
+.Post__btn-row {
+	display: flex;
+	align-items: center;
+	position: relative;
+	left: 75px;
+}
+
+.Post__delete-hint {
+	opacity: 0;
+	margin-left: 10px;
+	background-color: white;
+	width: 65px;
+	text-align: center;
+	height: 30px;
+	border-radius: 10px;
+	transition: .2s;
+}
+
+.Post__checkmark-btn {
+	background: url(../icons/check-mark.png) 0 0/cover no-repeat;
+	background-color: transparent;
+	width: 30px;
+	height: 30px;
+	right: 10px;
+	position: absolute;
+	border: 1px solid transparent;
+	cursor: pointer;
+	position: relative;
+}
+
+.Post__cancel-btn {
+	background: url(../icons/cancel.png) 0 0/cover no-repeat;
+}
+
+.Post__completed-hint {
+	opacity: 0;
+	margin-left: 10px;
+	background-color: #dfe1e6;
+	width: 110px;
+	text-align: center;
+	height: 30px;
+	border-radius: 10px;
+	transition: .2s;
+	position: absolute;
+	left: -135px;
+}
+
+.Post__cancel-hint {
+	width: 80px;
+	left: -110px;
+}
